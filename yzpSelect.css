@@ -1,0 +1,46 @@
+yzp-select>div{
+	position: relative;
+}
+yzp-select input{
+	padding-left: 1%;
+	height: 30px;
+	font-size:14px;
+	width: 100%;
+	border-radius: 5px;
+	font-family: "微软雅黑";
+	border: 1px solid rgb(100,200,200);
+	color: rgb(100,200,200);
+	-webkit-appearance:none;
+}
+
+yzp-select input:focus{
+	outline: none;
+}
+yzp-select div:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-top: 5px solid rgb(100,200,200);
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	position:absolute;
+	right:5px;
+	top:15px;
+}
+yzp-select ul{
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	background-color: white;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	box-shadow: 1px 1px 2px rgb(200,200,200);
+}
+yzp-select ul li{
+	padding: 5px;
+}
+yzp-select ul li:hover{
+	background-color: rgb(100,200,200);
+	color: white;
+}
